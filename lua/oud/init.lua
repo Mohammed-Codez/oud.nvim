@@ -6,7 +6,7 @@ local highlights = require("oud.highlights")
 M.config = {}
 
 function M.setup(config)
-	M.config = vim.tbl_deep_extend("force", M.config, config)
+	-- M.config = vim.tbl_deep_extend("force", M.config, config)
 
 	vim.cmd("hi clear")
 	if vim.fn.exists("syntax_on") then
